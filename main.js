@@ -115,13 +115,14 @@ $(document).ready(function(){
         }
         $("#abilities").html("Abilities: "+abilities);
 
+        var ahtml = '';
         for(var s in data.stats){
           var name = data.stats[s].stat.name;
           var stat = data.stats[s].base_stat;
-          var html = '<h4>' + capitalizeFirstLetter(name) + ': ' + stat + '</h4';
-          $("#stats").append(html);
+          var html = '<h4>' + capitalizeFirstLetter(name) + ': ' + stat + '</h4><br>';
+          ahtml += html;
         }
-
+        $("#stats").html(ahtml);
       }
     })
   }
