@@ -121,6 +121,7 @@
   min-height: 100vh;
   max-height: 100vh;
   margin: auto;
+  overflow-y: auto;
 }
 
 .info div {
